@@ -1,0 +1,21 @@
+    if (start > end)
+    {
+        cout << "Not found!" << endl;
+        return -1;
+    }
+
+    int middle = (start + end) / 2;
+
+    if (arr[middle] == value) // Corrected comparison
+    {
+        cout << "Found at index: " << middle << endl;
+        return middle;
+    }
+    if (value < arr[middle])
+    {
+        return binary_search(arr, value, start, middle - 1);
+    }
+    else // No need for an extra condition
+    {
+        return binary_search(arr, value, middle + 1, end);
+    }
