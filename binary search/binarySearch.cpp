@@ -7,7 +7,7 @@
 using namespace std;
 int binary_search(vector<int> &arr, int value, int start, int end)
 {
-//
+    //
 }
 
 int main(int argc, char const *argv[])

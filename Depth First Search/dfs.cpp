@@ -8,15 +8,7 @@ using namespace std;
 
 void dfs(int node, vector<vector<int>> &adj, vector<bool> &visited)
 {
-    cout << node << " ";
-    visited[node] = true;
-    for (int neigbor : adj[node])
-    {
-        if (!visited[neigbor])
-        {
-            dfs(neigbor, adj, visited);
-        }
-    }
+    //
 }
 
 int main(int argc, char const *argv[])
